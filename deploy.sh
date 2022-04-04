@@ -23,7 +23,7 @@ docker create -p 8443:8443 --name node_app $IMAGE_NAME
 # Write the private key to a file
 echo $PRIVATE_KEY > privatekey.pem
 # Write the server key to a file
-eche $SERVER > server.crt
+echo $SERVER > server.crt
 # Add the private key to the node_app docker container
 docker cp ./privatekey.pem node_app:/privatekey.pem
 # Add the server key to the node_app docker container
